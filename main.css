@@ -58,3 +58,4 @@ font-size: 90px;
 float: left;
 padding-left: 10px;
 }
+@media (min-width: 720px) { div#calculator {width: 1000px;} }
