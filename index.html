@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href=".\main.css">
+</head>
+<body style="overflow: hidden;">
+<img style="position: absolute; height: 1500px; top: 0px; z-index: -20;"
+     src="image\background.png" alt="">
+<div id="parent" >
+    <main id="calculator">
+        <div id="rez">
+            <h1 id="sign1"></h1>
+            <h1 id="inf"></h1>
+        </div>
+        <div id="del" style="height: 150px;">
+            <button class="del" onclick="CE_del()"><img height="30px" src="image\CE.svg" alt=""></button>
+            <button class="del" onclick="del()"><img height="30px" src="image\del.png" alt=""></button>
+        </div>
+        <div  style="width: 500px;">
+            <button class="nam" onclick="nam7()">7</button>
+            <button class="nam" onclick="nam8()">8</button>
+            <button class="nam" onclick="nam9()">9</button>
+            <button class="sign" onclick="sign_plus()">+</button>
+            <button class="nam" onclick="nam4()">4</button>
+            <button class="nam" onclick="nam5()">5</button>
+            <button class="nam" onclick="nam6()">6</button>
+            <button class="sign" onclick="sign_minus()">-</button>
+            <button class="nam" onclick="nam1()">1</button>
+            <button class="nam" onclick="nam2()">2</button>
+            <button class="nam" onclick="nam3()">3</button>
+            <button class="sign" onclick="sign_division()">/</button>
+            <button class="sign" onclick="sign_inf()">.</button>
+            <button class="nam" onclick="nam0()">0</button>
+            <button class="sign" onclick="sign_equals()">=</button>
+            <button class="sign" onclick="sign_multiplication()">*</button>
+        </div>
+    </main>
+</div>
+    <script src="main.js"></script>
+</body>
+</html>
